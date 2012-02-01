@@ -32,7 +32,7 @@ class SssTwitterController {
 		// builds the oauth1 authorize URL
 		OAuthToken requestToken = oauthOperations.fetchRequestToken(createLink(action: "connected", absolute: true).toString(), null);
 		session["ssstwitter.oauthtoken"] = requestToken
-		String authorizeUrl = oauthOperations.buildAuthorizeUrl(requestToken.getValue(), OAuth1Parameters.NONE);
+		String authorizeUrl = oauthOperations.buildAuthenticateUrl(requestToken.getValue(), OAuth1Parameters.NONE);
 
 		// redirects to the oauth1 authorize URL
 		redirect(url: authorizeUrl)
