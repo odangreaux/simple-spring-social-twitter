@@ -1,1 +1,15 @@
 target
+
+*.prefs
+
+*.class
+
+*.swp
+
+*.prefs
+
+.classpath
+
+.settings/org.codehaus.groovy.eclipse.preferences.prefs
+
+.settings/org.codehaus.groovy.eclipse.preferences.prefs
